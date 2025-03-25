@@ -92,6 +92,46 @@ p{
     padding-bottom: 20px;
 }
 
+.page-tittle{
+    background-color: #FFFFFF;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-tittle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.page-content{
+    padding-top: 20px;
+}
+
+.content h1{
+    font-family: "Roboto", serif;
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/*.content h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}*/
+
+.content .page-content h2{
+    font-family: "Roboto", serif;
+    text-align: left;
+    font-size: 18px;
+}
+
+.content .page-content p{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .content h1{
     font-family: "Roboto", serif;
 }
@@ -217,3 +257,11 @@ h2{
     padding: 20px;
 }
 
+.tox .tox-promotion {
+    display: none !important;
+
+}
+
+.tox .tox-statusbar__right-container {
+    display: none !important;
+}

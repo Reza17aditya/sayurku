@@ -106,7 +106,7 @@ class PageManagementController extends Controller
                     $file_name = time().'-'.$request->file('image')->getClientOriginalName();
                     $file->move($folder_destination, $file_name);
 
-                    $data->Page_image = $folder_destination.'/'.$file_name;
+                    $data->image = $folder_destination.'/'.$file_name;
                 }
 
                 $data->save();

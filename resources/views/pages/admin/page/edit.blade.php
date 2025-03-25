@@ -13,19 +13,20 @@
                     <form id="submitForm" action="" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="{{ $detail->id }}">
                         <div class="mb-3">
-                            <label for="product_name" class="form-label">Product Name</label>
-                            <input type="text" name="product_name" class="form-control" id="product_name" value="{{ $detail->product_name }}">
+                            <label for="title" class="form-label">Page Title</label>
+                            <input type="text" name="title" class="form-control" id="title" value="{{ $detail->title }}">
                         </div>
                         <div class="mb-3">
-                            <label for="product_description" class="form-label">Product Description</label>
-                            <textarea name="product_description" id="product_description" class="form-control">{{ $detail->product_description }}</textarea>
+                            <label for="content" class="form-label">Content</label>
+                            <textarea name="content_text" id="content_text" class="form-control">{{ $detail->content }}</textarea>
+                            <input type="hidden" name="content" id="content">
                         </div>
                         <div class="mb-3">
-                            <label for="product_image" class="form-label">Product Image</label>
-                            <input type="file" class="form-control" name="product_image" id="product_image" value="">
+                            <label for="image" class="form-label">Image</label>
+                            <input type="file" class="form-control" name="image" id="image" value="">
                         </div>
                         <div class="mb-3">
-                            <img src="{{ asset($detail->product_image) }}" width="250" alt="">
+                            <img src="{{ asset($detail->image) }}" width="250" alt="">
                         </div>
                         <div class="mb-3 d-flex justify-content-end">
                             <button type="submit" class="btn btn-primary submit-data">Submit</button>
